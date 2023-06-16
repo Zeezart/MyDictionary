@@ -1,0 +1,17 @@
+body{
+    background-color:#ffffff;
+    margin: 1rem;
+    font-family: 'Mukta', sans-serif;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+}
+
+@media screen and (max-width:650px) and (min-width:350px){
+    .body{
+      
+   
+    }
+}
+

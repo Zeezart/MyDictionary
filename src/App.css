@@ -1,0 +1,117 @@
+
+
+/* .app{
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);;
+    padding: 2rem 6rem;
+    width: 500px;
+    height: 80vh;
+    overflow-y: scroll;
+} */
+.search-bar{
+    border: none;
+    border-radius: 10rem;
+    padding: 0.4rem;
+    box-shadow: 0 0 8 #ddd;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.8rem 1rem;
+}
+.input-bar{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+.input-bar:focus{
+    outline: none;
+}
+
+.search-icon{
+    color:   #ec8a0a;
+    font-size: 1rem;
+    margin-right: 5px;
+    padding: 0 1rem 0 0;
+}
+
+.search-icon:hover{
+    color:#cf7702;
+}
+.search-button{
+    outline: none;
+    background-color: transparent;
+    border: none;
+    color:   #ec8a0a;
+}
+
+.search-button:hover{
+    color:   #cf7702;
+}
+
+/* styling word and phonetic */
+
+.pos li{
+    font-size: 0.85rem;
+}
+.word h1{
+    margin: 1.5rem 0 0 0;
+    
+}
+.meanings ol{
+   padding: 0; 
+}
+.meanings hr{
+    opacity: 10%;
+    text-align: center;
+    color:   #ec8a0a;
+}
+.meanings li{
+    font-size: 0.85rem;
+    text-align: justify;
+    margin: 10px;
+    line-height: 1.2rem;
+}
+.phonetics{
+    display: flex;
+    color:  #ec8a0a;
+    gap: 0.2rem;
+}
+.phonetics p{
+    margin: 0;
+}
+.volume-icon{
+    font-size: 1rem;
+}
+/* styling part of speech */
+.pos{
+    display: flex;
+    padding: 0;
+}
+.pos li{
+    padding: 0.2rem 2rem;
+    border: 2px solid #ec8a0a;
+    list-style: none;
+}
+.pos li:hover{
+    background-color: #ec8a0a;
+    color: white;
+}
+
+.zee{
+    text-align: right;
+}
+
+@media screen and (min-width:750px){
+    .app{
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);;
+        padding: 2rem 6rem;
+        width: 500px;
+        height: 80vh;
+        overflow-y: scroll;
+    }
+}
