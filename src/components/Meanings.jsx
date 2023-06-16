@@ -12,7 +12,6 @@ function Meanings(props){
             </ol>:
 
             <ol>
-                <li>MEANING WILL DISPLAY HERE</li>
                 {props.data.map(datum => datum.meanings.map(meaning => meaning.definitions.map(def=>{
                     return(
                         <li>{def.definition}</li>
