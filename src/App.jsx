@@ -1,7 +1,6 @@
-import react, { useState } from 'react'
+import react, { useState,useEffect } from 'react'
 import './App.css'
 import SearchBar from './components/searchbar'
-import Meanings from './components/Meanings'
 import Result from './components/result'
 
 function App(){
@@ -14,7 +13,7 @@ function App(){
   function handleChange(event){
       setSearchInput(event.target.value)    
   }
-
+  
   const fetchDictionarydata = async () => {
       const api =  `https://api.dictionaryapi.dev/api/v2/entries/en/${searchedWord}`
       const apiResult = await fetch(api)
@@ -24,10 +23,15 @@ function App(){
 
   function handleClick(){
     setSearchedWord(searchInput)
-    fetchDictionarydata()
-    setDisplayResults(true)
   }
 
+
+  useEffect(() => {
+    if (searchedWord !== '') {
+      fetchDictionarydata();
+      setDisplayResults(true);
+    }
+  }, [searchedWord]);
   return(
     <div className='app'>
       <h6>ENGLISH DICTIONARY</h6>
