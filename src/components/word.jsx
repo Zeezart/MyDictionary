@@ -34,10 +34,10 @@ function Word({data}){
                     )
                 }
 
-                <FaVolumeUp 
+{/*                 <FaVolumeUp 
                     className='volume-icon'
                     onClick={handleClick}
-                />
+                /> */}
             </div>    
         </div>
     )
